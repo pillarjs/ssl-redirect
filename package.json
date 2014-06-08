@@ -1,0 +1,24 @@
+{
+  "name": "ssl-redirect",
+  "description": "redirect users to the SSL version of your app",
+  "version": "0.1.0",
+  "author": {
+    "name": "Jonathan Ong",
+    "email": "me@jongleberry.com",
+    "url": "http://jongleberry.com",
+    "twitter": "https://twitter.com/jongleberry"
+  },
+  "license": "MIT",
+  "repository": "expressjs/ssl-redirect",
+  "dependencies": {
+    "debug": "*",
+    "accepts": "1"
+  },
+  "devDependencies": {
+    "mocha": "1",
+    "supertest": "0"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec"
+  }
+}
