@@ -1,7 +1,7 @@
 
 var request = require('supertest')
 
-var server = require('./')()
+var server = require('..')()
 
 describe('SSL Redirect', function () {
   describe('GET', function () {
