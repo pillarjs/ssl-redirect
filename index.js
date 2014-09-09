@@ -12,14 +12,12 @@ module.exports = function (options) {
 
   // strict-transport-security and cache-control
   var STS = 'max-age=' + options.maxAge || '16070400'
-  var CC = STS
   if (options.includeSubDomains !== false) STS += '; includeSubDomains'
 
   return http.createServer(function (req, res) {
     var url = parse(req.url)
     var location = 'https://' + (req.headers.host || host) + url.path
 
-    res.setHeader('Cache-Control', CC) // not sure if this does anything
     res.setHeader('Strict-Transport-Security', STS)
 
     // these are generally browser requests,
